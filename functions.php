@@ -38,4 +38,29 @@ register_nav_menus([
     'bottom-menu' => esc_html__('Footer', 'wp-hierarchy'),
 ]);
 
-register_sidebar('New sidebar');
+/**
+ * setup widget areas
+ */
+
+function wphierarchy_widget_init()
+{
+    $args = [
+        'name' => esc_html__('Main Sidebar', 'wphierarchy'),
+        'id' => 'main-sidebar',
+        'description' => esc_html__('Add widgets for main sidebar here'),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+    ];
+    register_sidebar($args);
+}
+
+add_action('widget_init', 'wphierarchy_widget_init');
+
+// function wpdocs_register_widgets()
+// {
+//     register_widget('My_Widget');
+// }
+
+// add_action('widgets_init', 'wpdocs_register_widgets');
