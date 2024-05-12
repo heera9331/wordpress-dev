@@ -7,14 +7,8 @@
 
 <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <header class="entry-header">
-                <h2>index.php</h2>
-            </header>
-            <div class="entry-content">
-                <p></p>
-            </div>
-        </article>
+        <?php get_template_part('template-parts/content') ?>
+        <?php get_template_part('template-parts/content', 'none') ?>
 
         <?php get_sidebar('main-sidebar'); ?>
     </main>
