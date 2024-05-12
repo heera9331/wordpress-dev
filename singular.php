@@ -13,8 +13,10 @@
         <?php get_sidebar('main-sidebar'); ?>
     </main>
 </div>
-<h3>Template: index.php</h3>
+<h3>Template: singular.php</h3>
+
 <?php get_footer(); ?>
+
 </body>
 
 </html>
