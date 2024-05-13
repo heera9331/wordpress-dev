@@ -11,6 +11,7 @@
         <?php get_template_part('template-parts/content', 'none') ?>
 
         <?php get_sidebar('main-sidebar'); ?>
+        <?php get_comment('main-sidebar'); ?>
     </main>
 </div>
 <h3>Template: index.php</h3>
