@@ -4,7 +4,7 @@ add_theme_support('title-tag');
 add_theme_support('menus');
 add_theme_support('widgets');
 add_theme_support('post-thumbnails');
-add_theme_support('post-format', ['aside', 'gallary', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat']);
+add_theme_support('post-formats', ['aside', 'gallary', 'link', 'image', 'quote', 'status', 'video', 'audio', 'chat']);
 add_theme_support('html5');
 add_theme_support('custom-background');
 add_theme_support('custom-header');
