@@ -9,6 +9,7 @@
     <main id="main" class="site-main" role="main">
         <?php get_template_part('template-parts/content') ?>
         <?php get_template_part('template-parts/content', 'none') ?>
+        <?php get_template_part('template-parts/content', 'gallary') ?>
 
         <?php get_sidebar('main-sidebar'); ?>
         <?php get_comment('main-sidebar'); ?>
